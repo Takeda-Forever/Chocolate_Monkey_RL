@@ -29,17 +29,17 @@ The agent learns that eating is the best action in every state.
 ### 📦 How to Run
 Clone the repository:
 bash
-Copy
-Edit
+```
 git clone https://github.com/Takeda-Forever/Chocolate_Monkey_RL.git
 cd Chocolate_Monkey_RL
+```
 Compile and run the code:
 
 bash
-Copy
-Edit
+```
 g++ monkey_q_learning.cpp -o monkey
 ./monkey
+```
 ### 📚 Learning Concepts
 State – current number of chocolate pieces
 Action – what the monkey chooses to do
