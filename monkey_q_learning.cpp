@@ -7,7 +7,7 @@ using namespace std;
 
 // Learning parameters
 const double alpha = 0.1;    // learning rate
-const double gamma = 0.9;    // discount factor
+const double discount = 0.9;    // discount factor
 const int max_state = 3;     // chocolate pieces left: 3, 2, 1, 0
 
 // Actions: 0 - do nothing, 1 - eat 1 piece of chocolate
@@ -60,7 +60,7 @@ int main() {
 
             // Q-learning update rule
             double maxQNext = max(Q[nextState][0], Q[nextState][1]);
-            Q[state][action] = Q[state][action] + alpha * (reward + gamma * maxQNext - Q[state][action]);
+            Q[state][action] = Q[state][action] + alpha * (reward + discount * maxQNext - Q[state][action]);
 
             state = nextState;
         }
