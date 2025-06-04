@@ -17,26 +17,22 @@ Demonstrates core concepts of reinforcement learning
 
 ### 📋 Example Output
 After training, the program prints a table of learned Q-values:
-vbnet
-Copy
-Edit
+``` vbnet
 State (chocolate left): 3/3 -> Do nothing: 0.00, Eat: 4.81  
 State (chocolate left): 2/3 -> Do nothing: 0.00, Eat: 6.25  
 State (chocolate left): 1/3 -> Do nothing: 0.00, Eat: 8.39  
 State (chocolate left): 0/3 -> Do nothing: 0.00, Eat: 0.00  
 The agent learns that eating is the best action in every state.
-
+```
 ### 📦 How to Run
 Clone the repository:
-bash
-```
+``` bash
 git clone https://github.com/Takeda-Forever/Chocolate_Monkey_RL.git
 cd Chocolate_Monkey_RL
 ```
 Compile and run the code:
 
-bash
-```
+``` bash
 g++ monkey_q_learning.cpp -o monkey
 ./monkey
 ```
@@ -45,14 +41,12 @@ State – current number of chocolate pieces
 Action – what the monkey chooses to do
 Reward – +10 only if chocolate is fully eaten
 Q-Learning Update Rule:
-lua
-Copy
-Edit
+``` lua
 Q[s][a] = Q[s][a] + α * (reward + γ * max(Q[next_state]) - Q[s][a])
 Parameters:
 α = learning rate
 γ = discount factor
-
+```
 ### 🤖 Why This Project?
 This project is intended as a minimal, intuitive introduction to reinforcement learning using C++.
 It’s perfect for beginners who want to understand how agents learn from trial and error.
