@@ -1,4 +1,4 @@
-🍫 ### Chocolate Monkey – Q-Learning Example in C++
+# 🍫 Chocolate Monkey – Q-Learning Example in C++
 This project demonstrates a simple Q-Learning reinforcement learning algorithm using a fun analogy:
 A monkey is in a room with a chocolate bar divided into three pieces. The goal is to learn the best way to eat all the chocolate and get the highest reward (satisfaction).
 
