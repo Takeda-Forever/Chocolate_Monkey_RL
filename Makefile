@@ -1,12 +1,12 @@
 CXX = g++
-# CXXFLAGS = -Wall -Wextra -O2
+CXXFLAGS = -Wall -Wextra -O2
 TARGET = monkey
 SRC = monkey_q_learning.cpp
 
 all: $(TARGET)
 
 $(TARGET): $(SRC)
-	$(CXX) -o $@ $^
+	$(CXX) $(CXXFLAGS) -o $@ $^
 
 check:
 	@echo "Running tests (dummy)"
